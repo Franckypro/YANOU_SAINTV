@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Yanou Mon amour❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hearts-container"></div>
+    
+    <!-- Page d'accueil -->
+    <div id="welcome-page" class="page active">
+        <div class="content">
+            <h1 class="main-title">Pour Yanou Mon amour 💕</h1>
+            <p class="subtitle">Réponds à ces questions avec ton cœur bébé...</p>
+            <button class="btn-primary" onclick="startQuiz()">Commencer</button>
+        </div>
+    </div>
+
+    <!-- Question 1 -->
+    <div id="question1" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 1/8</h2>
+            <h3 class="question-text">Crois-tu aux coups de foudre ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(2)">Oui, c'est magique ✨</button>
+                <button class="btn-answer" onclick="nextQuestion(2)">L'amour se construit avec le temps 💫</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div id="question2" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 2/8</h2>
+            <h3 class="question-text">Qu'est-ce qui te fait le plus fondre chez moi ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(3)">Mon sourire 😊</button>
+                <button class="btn-answer" onclick="nextQuestion(3)">Mon attention et ma folie 🌸</button>
+                <button class="btn-answer" onclick="nextQuestion(3)">Mon humour et ma joie de vivre 😄</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div id="question3" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 3/8</h2>
+            <h3 class="question-text">Quelle est ta définition d'un moment parfait ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(4)">Un câlin sous les étoiles 🌙</button>
+                <button class="btn-answer" onclick="nextQuestion(4)">Rire ensemble jusqu'à en avoir mal au ventre 😂</button>
+                <button class="btn-answer" onclick="nextQuestion(4)">Un regard qui dit tout sans parler 👁️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div id="question4" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 4/8</h2>
+            <h3 class="question-text">Si l'amour était une couleur, ce serait ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(5)">Rose tendre comme une promesse 🌸</button>
+                <button class="btn-answer" onclick="nextQuestion(5)">Rouge passion comme un battement de cœur ❤️</button>
+                <button class="btn-answer" onclick="nextQuestion(5)">Doré comme un coucher de soleil 🌅</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div id="question5" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 5/8</h2>
+            <h3 class="question-text">Qu'est-ce qui rend ton cœur heureux ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(6)">Les petites attentions du quotidien 💝</button>
+                <button class="btn-answer" onclick="nextQuestion(6)">Les surprises romantiques 🎁</button>
+                <button class="btn-answer" onclick="nextQuestion(6)">Les moments de complicité 🤗</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div id="question6" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 6/8</h2>
+            <h3 class="question-text">Comment sais-tu que c'est le bon ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(7)">Mon cœur bat différemment 💓</button>
+                <button class="btn-answer" onclick="nextQuestion(7)">Je me sens moi-même à 100% 🦋</button>
+                <button class="btn-answer" onclick="nextQuestion(7)">Tout devient plus beau avec toi 🌈</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div id="question7" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 7/8</h2>
+            <h3 class="question-text">Qu'est-ce que l'amour représente pour toi ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(8)">Un refuge et une maison 🏡</button>
+                <button class="btn-answer" onclick="nextQuestion(8)">Une aventure sans fin 🚀</button>
+                <button class="btn-answer" onclick="nextQuestion(8)">Un trésor précieux à chérir 💎</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 8 (dernière) -->
+    <div id="question8" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 8/8</h2>
+            <h3 class="question-text">Es-tu prête à découvrir quelque chose de spécial ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="showFinalPage()">Oui ! 💕</button>
+                <button class="btn-answer" onclick="showFinalPage()">J'ai hâte ! ✨</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page finale -->
+    <div id="final-page" class="page">
+        <div class="content final-content">
+            <div class="big-heart">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,90 C50,90 10,60 10,40 C10,25 20,15 30,15 C40,15 45,25 50,35 C55,25 60,15 70,15 C80,15 90,25 90,40 C90,60 50,90 50,90 Z" 
+                          fill="url(#heart-gradient)" 
+                          class="heart-path"/>
+                    <defs>
+                        <linearGradient id="heart-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff1744;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff80ab;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            
+            <div class="photo-container">
+                <img src="IMG_8999.jpeg" alt="Yanou">
+            </div>
+
+            <div class="letter">
+                <h2 class="letter-title">Mon amour Yanou,</h2>
+                <div class="letter-content">
+                    <p>
+                        En ce jour spécial, je prends enfin le temps de mettre des mots sur ce que je ressens vraiment pour toi… même si ce n'est pas quelque chose que j'ai l'habitude de faire. Mais pour toi, ça en vaut la peine.
+                    </p>
+                    <p>
+                        Tu es une personne exceptionnelle, avec un cœur immense. Depuis que je te connais, ton bonheur est devenu une priorité pour moi. Tu as traversé des moments difficiles, et tu continues d'en traverser encore aujourd'hui… mais malgré tout, tu restes forte, courageuse, et ça force mon admiration chaque jour un peu plus.
+                    </p>
+                    <p>
+                        J'ai pris le temps de concevoir cette application juste pour toi. Oui, ça m'a demandé du temps, de l'énergie… mais tu mérites tout ça, et bien plus encore. Parce que tu fais partie de mes priorités de vie.
+                    </p>
+                    <p>
+                        Notre rencontre n'était pas parfaite, elle était même assez étrange, dans des conditions pas forcément idéales… mais aujourd'hui, je suis fier de dire que je suis ton homme. Fier de toi. Fier de nous. Et fier de ce qu'on construit ensemble.
+                    </p>
+                    <p>
+                        Je ne suis pas quelqu'un de très démonstratif, tu le sais. Je dirais même que c'est la première fois que je m'ouvre autant. Mais une chose est sûre : ce que je ressens pour toi est réel, profond, et sincère.
+                    </p>
+                    <p>
+                        Toi et moi, on est capables de faire de grandes choses. Rien ne sera facile, mais tant qu'on y croit, on peut tout surmonter. Et je veux que tu saches que je serai toujours là pour toi, peu importe les épreuves.
+                    </p>
+                    <p>
+                        Je ne suis pas parfait, j'ai mes défauts… mais une chose ne changera jamais : l'amour que j'ai pour toi.
+                    </p>
+                    <p class="letter-signature">
+                        Je t'aime, mon bébé d'amour ❤️<br>
+                        Bonne Saint-Valentin, mon amour.<br><br>
+                        — Ton homme Francky
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
