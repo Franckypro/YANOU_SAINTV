@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Yanou Mon amour❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hearts-container"></div>
+    
+    <!-- Page d'accueil -->
+    <div id="welcome-page" class="page active">
+        <div class="content">
+            <h1 class="main-title">Pour Yanou Mon amour 💕</h1>
+            <p class="subtitle">Réponds à ces questions avec ton cœur bébé...</p>
+            <button class="btn-primary" onclick="startQuiz()">Commencer</button>
+        </div>
+    </div>
+
+    <!-- Question 1 -->
+    <div id="question1" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 1/8</h2>
+            <h3 class="question-text">Crois-tu aux coups de foudre ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(2)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=200&q=80" alt="Couple romantique">
+                    <span>Oui, c'est magique ✨</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(2)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=200&q=80" alt="Couple qui marche ensemble">
+                    <span>L'amour se construit avec le temps 💫</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div id="question2" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 2/8</h2>
+            <h3 class="question-text">Qu'est-ce qui te fait le plus fondre chez moi ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(3)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Sourire">
+                    <span>Mon sourire 😊</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(3)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=200&q=80" alt="Attention et tendresse">
+                    <span>Mon attention et ma folie 🌸</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(3)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=200&q=80" alt="Couple qui rit">
+                    <span>Mon humour et ma joie de vivre 😄</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div id="question3" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 3/8</h2>
+            <h3 class="question-text">Quelle est ta définition d'un moment parfait ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(4)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=200&q=80" alt="Câlin sous le ciel">
+                    <span>Un câlin sous les étoiles 🌙</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(4)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=200&q=80" alt="Couple qui rit">
+                    <span>Rire ensemble jusqu'à en avoir mal au ventre 😂</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(4)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999?auto=format&fit=crop&w=200&q=80" alt="Regard amoureux">
+                    <span>Un regard qui dit tout sans parler 👁️</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div id="question4" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 4/8</h2>
+            <h3 class="question-text">Si l'amour était une couleur, ce serait ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(5)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=200&q=80" alt="Fleurs roses">
+                    <span>Rose tendre comme une promesse 🌸</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(5)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=200&q=80" alt="Rouge passion">
+                    <span>Rouge passion comme un battement de cœur ❤️</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(5)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1472120435266-53107fd0c44a?auto=format&fit=crop&w=200&q=80" alt="Coucher de soleil doré">
+                    <span>Doré comme un coucher de soleil 🌅</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div id="question5" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 5/8</h2>
+            <h3 class="question-text">Qu'est-ce qui rend ton cœur heureux ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(6)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=200&q=80" alt="Petites attentions">
+                    <span>Les petites attentions du quotidien 💝</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(6)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=200&q=80" alt="Surprise romantique">
+                    <span>Les surprises romantiques 🎁</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(6)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=200&q=80" alt="Complicité en couple">
+                    <span>Les moments de complicité 🤗</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div id="question6" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 6/8</h2>
+            <h3 class="question-text">Comment sais-tu que c'est le bon ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(7)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=200&q=80" alt="Battement de cœur">
+                    <span>Mon cœur bat différemment 💓</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(7)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?auto=format&fit=crop&w=200&q=80" alt="Confiance en soi">
+                    <span>Je me sens moi-même à 100% 🦋</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(7)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=200&q=80" alt="Paysage lumineux">
+                    <span>Tout devient plus beau avec toi 🌈</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div id="question7" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 7/8</h2>
+            <h3 class="question-text">Qu'est-ce que l'amour représente pour toi ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="nextQuestion(8)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=200&q=80" alt="Maison chaleureuse">
+                    <span>Un refuge et une maison 🏡</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(8)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=200&q=80" alt="Aventure">
+                    <span>Une aventure sans fin 🚀</span>
+                </button>
+                <button class="btn-answer" onclick="nextQuestion(8)">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=200&q=80" alt="Trésor précieux">
+                    <span>Un trésor précieux à chérir 💎</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 8 (dernière) -->
+    <div id="question8" class="page">
+        <div class="content">
+            <h2 class="question-number">Question 8/8</h2>
+            <h3 class="question-text">Es-tu prête à découvrir quelque chose de spécial ?</h3>
+            <div class="answers">
+                <button class="btn-answer" onclick="showFinalPage()">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=200&q=80" alt="Découverte romantique">
+                    <span>Oui ! 💕</span>
+                </button>
+                <button class="btn-answer" onclick="showFinalPage()">
+                    <img class="answer-photo" src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999?auto=format&fit=crop&w=200&q=80" alt="Hâte de découvrir">
+                    <span>J'ai hâte ! ✨</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page finale -->
+    <div id="final-page" class="page">
+        <div class="content final-content">
+            <div class="big-heart">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,90 C50,90 10,60 10,40 C10,25 20,15 30,15 C40,15 45,25 50,35 C55,25 60,15 70,15 C80,15 90,25 90,40 C90,60 50,90 50,90 Z" 
+                          fill="url(#heart-gradient)" 
+                          class="heart-path"/>
+                    <defs>
+                        <linearGradient id="heart-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff1744;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff80ab;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            
+            <div class="photo-container">
+                <img src="IMG_8999.jpeg" alt="Yanou">
+            </div>
+
+            <div class="letter">
+                <h2 class="letter-title">Mon amour Yanou,</h2>
+                <div class="letter-content">
+                    <p>
+                        En ce jour spécial, je prends enfin le temps de mettre des mots sur ce que je ressens vraiment pour toi… même si ce n'est pas quelque chose que j'ai l'habitude de faire. Mais pour toi, ça en vaut la peine.
+                    </p>
+                    <p>
+                        Tu es une personne exceptionnelle, avec un cœur immense. Depuis que je te connais, ton bonheur est devenu une priorité pour moi. Tu as traversé des moments difficiles, et tu continues d'en traverser encore aujourd'hui… mais malgré tout, tu restes forte, courageuse, et ça force mon admiration chaque jour un peu plus.
+                    </p>
+                    <p>
+                        J'ai pris le temps de concevoir cette application juste pour toi. Oui, ça m'a demandé du temps, de l'énergie… mais tu mérites tout ça, et bien plus encore. Parce que tu fais partie de mes priorités de vie.
+                    </p>
+                    <p>
+                        Notre rencontre n'était pas parfaite, elle était même assez étrange, dans des conditions pas forcément idéales… mais aujourd'hui, je suis fier de dire que je suis ton homme. Fier de toi. Fier de nous. Et fier de ce qu'on construit ensemble.
+                    </p>
+                    <p>
+                        Je ne suis pas quelqu'un de très démonstratif, tu le sais. Je dirais même que c'est la première fois que je m'ouvre autant. Mais une chose est sûre : ce que je ressens pour toi est réel, profond, et sincère.
+                    </p>
+                    <p>
+                        Toi et moi, on est capables de faire de grandes choses. Rien ne sera facile, mais tant qu'on y croit, on peut tout surmonter. Et je veux que tu saches que je serai toujours là pour toi, peu importe les épreuves.
+                    </p>
+                    <p>
+                        Je ne suis pas parfait, j'ai mes défauts… mais une chose ne changera jamais : l'amour que j'ai pour toi.
+                    </p>
+                    <p class="letter-signature">
+                        Je t'aime, mon bébé d'amour ❤️<br>
+                        Bonne Saint-Valentin, mon amour.<br><br>
+                        — Ton homme Francky
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
